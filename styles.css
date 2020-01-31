@@ -1,5 +1,5 @@
 ﻿body {
-    margin: 30px;
+
 }
 h1 {
     font-size: 20px;
@@ -53,20 +53,38 @@ p {
         font: inherit;
         margin: 0;
     }
+    .navbar .dropbtn:hover{
+        background-color:black;
+        color:white;
+    }
 .navbar .logo a:hover{
     text-decoration: none;
 }
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover {
     text-decoration: underline;
 }
+.navbar .liveshop:hover{
+    text-decoration:none;
+    background-color: black;
+    color: white;
+}
+.navbar .liveshop:focus {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+}
+
 .dropdown-content {
+    padding-left: 20px;
+    padding-bottom: 10px;
     display: none;
     position: absolute;
     width: 100%;
     left: 0;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    background-color:white;
+    z-index: 999;
+    background-color: white;
+    top:67px;
 }
 .dropdown:hover .dropdown-content {
     display: block;
@@ -107,7 +125,7 @@ p {
    width: 100%;
    height: 100%;
    object-fit: contain;
-   transition: 0.3s;
+   transition: 0.5s;
 }
 .thumbimg {
     background: grey;
@@ -164,26 +182,50 @@ p {
     font-size:20px;
 }
 
-.sidenav{
-    height:100%;
-    width: 200px;
+#sidebar {
     position: fixed;
-    z-index: -1;
+    width: 0px;
+    height: 100%;
+    left: 0;
+    transition: 0.5s;
+    z-index: 1;
     background-color: white;
-    overflow-x: hidden;
-    padding-top: 20px;
-}
-.sidenav .title{
-    font-size:25px;
-    padding: 4px 0px 4px 8px;
+    overflow-x:hidden;
 }
 
-.sidenav a{
+#sidebar a{
     padding: 6px 8px 6px 8px;
     text-decoration: none;
-    font-size: 18px;
-    display:block; 
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    display:block;
+    border-left: 10px solid transparent;
+    transition:0.3s;
 }
-.sidenav a:hover{
-    text-decoration:underline;
+#sidebar a:focus{
+    border-color:black;
+}
+#sidebar a:hover{
+    border-color:black;
+}
+#sidebar .title{
+    font-size:20px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 4px 0px 4px 8px;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+    border-top:1px solid rgba(100, 100, 100, 0.3);
+}
+
+.openbtn {
+    cursor: pointer;
+    background-color: Transparent;
+    overflow:hidden;
+    border:none;
+    outline: none;
+    position: relative;
+    left:-30px;
+}
+#main{
+    transition: margin-left 0.5s;
+    padding: 20px;
 }
