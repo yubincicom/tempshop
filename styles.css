@@ -1,9 +1,8 @@
 ﻿body {
-    margin:0;
 }
 h1 {
     font-size: 20px;
-    padding-top: 5px;
+    padding-top: 8px;
     padding-left: 15px;
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
@@ -14,33 +13,35 @@ p {
 .header {
     border-bottom: 2px black;
     border-bottom-style: solid;
+    padding-top: 10px;
 }
 .navbar{
     overflow: hidden;
     background-color: #FFFFFF;
 }
-    .navbar .logo a {
-        font-size: 25px;
-        float: left;
-        overflow: hidden;
-        padding-top: 10px;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: bold;
-    }
-    .navbar a {
-        float: left;
-        font-size: 16px;
-        color: black;
-        text-align: center;
-        padding: 18px 16px;
-        text-decoration: none;
-        font-family: 'Montserrat', sans-serif;
-    }
-
+.navbar .logo a {
+    font-size: 25px;
+    float: left;
+    overflow: hidden;
+    padding-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 18px 16px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
 .dropdown {
     float: left;
     overflow: hidden;
     font-family: 'Montserrat', sans-serif;
+    padding-left: 10px;
+    padding-right:10px;
 }
 .dropdown .dropbtn {
     font-family: 'Montserrat', sans-serif;
@@ -52,10 +53,10 @@ p {
     background-color: inherit;
     font: inherit;
     margin: 0;
+    border-top: 5px solid transparent;
 }
 .navbar .dropbtn:hover{
-    background-color:black;
-    color:white;
+    border-color: black;
 }
 .navbar .logo a:hover{
     text-decoration: none;
@@ -63,10 +64,13 @@ p {
 .navbar a:hover {
     text-decoration: underline;
 }
+.navbar .liveshop {
+    top: 5px;
+    border-top: 5px solid transparent;
+}
 .navbar .liveshop:hover{
     text-decoration:none;
-    background-color: black;
-    color: white;
+    border-color: black;
 }
 .navbar .liveshop:focus {
     text-decoration: none;
@@ -95,16 +99,22 @@ p {
     margin-left:30px;
 }
 .column a {
-      float: none;
-      color: black;
-      padding: 16px;
-      padding-left:45px;
-      text-decoration: none;
-      display: block;
-      text-align: left;
+    float: none;
+    color: black;
+    padding: 16px;
+    padding-left:45px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
 }
 .column a:hover{
     text-decoration: underline;
+}
+.content-title{
+    text-align:center;
+    padding-top: 50px;
+    padding-bottom:30px;
+    font-size: 30px;
 }
 .row:after {
     content:"";
@@ -116,7 +126,7 @@ p {
     margin:0px;
     float:left;
     margin: 0 auto;
-    padding:30px 50px 10px 60px;
+    padding:30px 50px 10px 70px;
 }
 .thumb img {
    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -164,7 +174,31 @@ p {
     padding-bottom: 10px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-size:20px;
+    font-size:18px;
+}
+.center{
+    text-align:center;
+}
+.pagination{
+    display: inline-block;
+    padding-top: 40px;
+    padding-bottom:60px;
+}
+.pagination a{
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+.pagination a.active{
+    background-color: black;
+    color: white;
+}
+.pagination a:hover:not(.active){
+    background-color: #ddd;
 }
 #sidebar {
     position: fixed;
@@ -173,30 +207,30 @@ p {
     left: 0;
     transition: 0.5s;
     z-index: 1;
-    background-color: white;
+    background-color: black;
     overflow-x:hidden;
 }
 #sidebar a{
-    padding: 6px 8px 6px 8px;
+    padding: 7px 8px 7px 25px;
     text-decoration: none;
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
     display:block;
-    border-left: 10px solid transparent;
-    transition:0.3s;
+    color:white;
+    transition: 0.2s;
 }
 #sidebar a:focus{
-    border-color:black;
+    background-color: white;
+    color: black;
 }
 #sidebar a:hover{
-    border-color:black;
+    border-left: 15px solid transparent;
 }
 #sidebar .title{
-    font-size:20px;
+    font-size:22px;
     font-family: 'Montserrat', sans-serif;
-    padding: 4px 0px 4px 8px;
-    border-bottom: 1px solid rgba(100, 100, 100, 0.3);
-    border-top:1px solid rgba(100, 100, 100, 0.3);
+    padding: 10px 0px 10px 8px;
+    color: white;
 }
 .openbtn {
     cursor: pointer;
@@ -205,7 +239,22 @@ p {
     border:none;
     outline: none;
     position: relative;
-    left:-25px;
+    left:-30px;
+}
+.side-icon {
+    color: white;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+#sidebar .empty{
+    color: black;
+}
+#sidebar .empty a:hover{
+    transition: 0s;
+}
+#sidebar .empty:hover{
+    border-color:transparent;
+    cursor: auto;
 }
 #main{
     transition: margin-left 0.5s;
@@ -213,12 +262,12 @@ p {
 }
 #temptitle{
     position:relative;
-    top: -55px;
+    top: -60px;
     left: 20px;
 }
 #frame {
     position: absolute;
-    width: 100%;
-    bottom:-150px;
-    left:-1px;
+    width: 99%;
+    bottom:-165px;
+    left: 8px;
 }
