@@ -1,62 +1,67 @@
 ﻿body {
+    border-top: 5px solid #66aa2d;
+    margin:0;
 }
 h1 {
     font-size: 20px;
     padding-top: 8px;
     padding-left: 15px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Arimo', sans-serif;
     font-weight: normal;
 }
 p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Arimo', sans-serif;
 }
-.header {
-    border-bottom: 2px black;
-    border-bottom-style: solid;
-    padding-top: 10px;
-}
+/*
+
+    main top menu + mega menu
+
+*/
 .navbar{
     overflow: hidden;
-    background-color: #FFFFFF;
+    background-color: black;
 }
 .navbar .logo a {
     font-size: 25px;
     float: left;
     overflow: hidden;
     padding-top: 10px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Arimo', sans-serif;
     font-weight: bold;
+    padding-top: 15px;
+    color: white;
 }
 .navbar a {
     float: left;
     font-size: 16px;
-    color: black;
+    color: white;
     text-align: center;
     padding: 18px 16px;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Arimo', sans-serif;
 }
 .dropdown {
     float: left;
     overflow: hidden;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Arimo', sans-serif;
     padding-left: 10px;
     padding-right:10px;
 }
 .dropdown .dropbtn {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Arimo', sans-serif;
     font-size: 16px;
     border: none;
     outline: none;
-    color: black;
+    color: white;
     padding: 18px 16px;
+    padding-top:25px;
     background-color: inherit;
     font: inherit;
     margin: 0;
-    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
 }
 .navbar .dropbtn:hover{
-    border-color: black;
+    border-color: #66aa2d;
 }
 .navbar .logo a:hover{
     text-decoration: none;
@@ -65,16 +70,15 @@ p {
     text-decoration: underline;
 }
 .navbar .liveshop {
-    top: 5px;
-    border-top: 5px solid transparent;
+    padding-top:25px;
+    border-bottom: 5px solid transparent;
 }
 .navbar .liveshop:hover{
     text-decoration:none;
-    border-color: black;
+    border-color: #66aa2d;
 }
 .navbar .liveshop:focus {
     text-decoration: none;
-    background-color: black;
     color: white;
 }
 .dropdown-content {
@@ -110,17 +114,24 @@ p {
 .column a:hover{
     text-decoration: underline;
 }
-.content-title{
-    text-align:center;
-    padding-top: 50px;
-    padding-bottom:30px;
-    font-size: 30px;
-}
 .row:after {
     content:"";
     display: table;
     clear: both;
 }
+
+
+.content-title {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-size: 30px;
+}
+/*
+
+    Design Images
+
+*/
 .thumb{
     position: relative;
     margin:0px;
@@ -173,12 +184,19 @@ p {
     padding-top: 20px;
     padding-bottom: 10px;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size:18px;
+    font-family: 'Arimo', sans-serif;
+    font-size: 18px;
 }
 .center{
     text-align:center;
 }
+
+/*
+
+    Pagination
+
+*/
+
 .pagination{
     display: inline-block;
     padding-top: 40px;
@@ -190,7 +208,7 @@ p {
     padding: 8px 16px;
     text-decoration: none;
     transition: background-color .3s;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Arimo', sans-serif;
     font-size: 20px;
 }
 .pagination a.active{
@@ -200,62 +218,7 @@ p {
 .pagination a:hover:not(.active){
     background-color: #ddd;
 }
-#sidebar {
-    position: fixed;
-    width: 0px;
-    height: 100%;
-    left: 0;
-    transition: 0.5s;
-    z-index: 1;
-    background-color: black;
-    overflow-x:hidden;
-}
-#sidebar a{
-    padding: 7px 8px 7px 25px;
-    text-decoration: none;
-    font-size: 15px;
-    font-family: 'Montserrat', sans-serif;
-    display:block;
-    color:white;
-    transition: 0.2s;
-}
-#sidebar a:focus{
-    background-color: white;
-    color: black;
-}
-#sidebar a:hover{
-    border-left: 15px solid transparent;
-}
-#sidebar .title{
-    font-size:22px;
-    font-family: 'Montserrat', sans-serif;
-    padding: 10px 0px 10px 8px;
-    color: white;
-}
-.openbtn {
-    cursor: pointer;
-    background-color: Transparent;
-    overflow:hidden;
-    border:none;
-    outline: none;
-    position: relative;
-    left:-30px;
-}
-.side-icon {
-    color: white;
-    padding-left: 10px;
-    padding-right: 15px;
-}
-#sidebar .empty{
-    color: black;
-}
-#sidebar .empty a:hover{
-    transition: 0s;
-}
-#sidebar .empty:hover{
-    border-color:transparent;
-    cursor: auto;
-}
+
 #main{
     transition: margin-left 0.5s;
     padding: 20px;
@@ -263,11 +226,32 @@ p {
 #temptitle{
     position:relative;
     top: -60px;
-    left: 20px;
+    left: 25px;
 }
+/*
+
+    Iframe
+
+*/
 #frame {
     position: absolute;
     width: 99%;
     bottom:-165px;
     left: 8px;
+
+}
+/*
+
+    Footer
+
+*/
+.footer{
+    background-color: #f2f2f2;
+    margin-top: 40px;
+}
+.footer p{
+    padding-top: 40px;
+    font-family: 'Arimo', sans-serif;
+    font-size: 12px;
+    text-align: center;
 }
