@@ -5,48 +5,50 @@
     <meta charset="utf-8" />
     <title>CICOM TEMP SHOP</title>
     <link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="sidebar.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
     <link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/f7fb64ba6e.js" crossorigin="anonymous"></script>
     <script src="./javascript.js"></script>
 </head>
+
 <body>
+
+    <!--top menu-->
     <div class="row header">
-        <!--logo-->
-        <div class="">
-            <div class="logo">
-                <a href="index.html">
-                </a>
-            </div>
-        </div>
-        <!--top menu-->
         <div class="navbar">
-            <div class="logo"><a href="Index.html">CICOM TEMP SHOP</a></div>
+            <div class="logo"><a href="Index.html"><img src="image/logo.png" /></a></div>
             <div class="dropdown">
-                <button class="dropbtn"> DESIGN </button>
+                <button class="dropbtn">DESIGN<i class="down"></i></button>
                 <div class="dropdown-content">
                     <div class="row">
                         <div class="column">
-                            <a href="Index.html">CICOM SHOP</a>
+                            <a href="" class="mega-title" style=" color: #66aa2d;">CICOM SHOP</a>
+                            <a href="Index.html">All</a>
+                            <a href="design1.html">DESIGN 1</a>
+                            <a href="design2.html">DESIGN 2</a>
+                            <a href="design3.html">DESIGN 3</a>
+                            <a href="productlist.html">PRODUCT LIST</a>
                         </div>
-                        <div class="column" style="border-left: 2px solid black;">
-                            <a href="all.html">ALL</a>
+                        <div class="column" style="border-left: 2px solid #66AA2D;">
+                            <a href="" class="mega-title" style="color:#66aa2d">EXPLORE MORE</a>
+                            <a href="all.html">All</a>
                             <a href="young_casual.html">YOUNG CASUAL</a>
-                            <a href="#">MISS/MISSY</a>
-                            <a href="#">SEXY</a>
+                            <a href="">MISS/MISSY</a>
+                            <a href="">SEXY</a>
+                            <a href="">CHILDREN</a>
                         </div>
                         <div class="column">
-                            <a href="#">CHILDREN</a>
-                            <a href="#">DRESS</a>
-                            <a href="#">ETHNICITY</a>
+                            <a href="" style="color: transparent">EMPTY</a>
+                            <a href="">DRESS</a>
+                            <a href="">ETHNICITY</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="dropdown">
-                <button class="dropbtn" style="background-color:#66aa2d; color:white;"> TEMP SHOP </button>
+                <button class="dropbtn" style="background-color:#66aa2d; color:white;"> TEMP SHOP <i class="down" style="border-color:white;"></i></button>
                 <div class="dropdown-content">
                     <div class="row">
                         <div class="column">
@@ -63,9 +65,10 @@
                     </div>
                 </div>
             </div>
-            <a href="users.html" class="liveshop">USERS</a>
+            <a href="users.html" class="regbtn">USERS</a>
         </div>
     </div>
+
     <!--Sidebar-->
     <div id="sidebar" style="width:0px;">
         <div class="title"><i class="fas fa-home side-icon"></i>Landing</div>
@@ -105,10 +108,11 @@
         <a href="#" class="empty">.</a>
     </div>
 
+    <!--content-->
     <div id="main">
         <img src="image/open.png" class="openbtn" id="toggleIcon" onclick="toggleNav()" />
         <h1 id="temptitle">LOG005</h1>
-        <iframe src="http://tempshop.cicomprogram.com/shop006/main.html" name="myFrame" class="myIframe" id="frame"></iframe>
+        <iframe src="http://tempshop.cicomprogram.com/shop006/main.html" frameborder="0" name="myFrame" class="myIframe" id="frame"></iframe>
     </div>
 
     <script type="text/javascript">
