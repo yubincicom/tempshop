@@ -6,7 +6,7 @@ h1 {
     font-size: 20px;
     padding-top: 8px;
     padding-left: 15px;
-    font-family: 'Arimo', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: normal;
 }
 p {
@@ -120,7 +120,6 @@ i {
     padding: 10px;
     padding-left:30px;
     padding-right:30px;
-    padding-bottom: 10px;
     text-decoration: none;
     display: block;
     text-align: left;
@@ -140,28 +139,29 @@ i {
 
 */
 .main-title {
-    top: -30px;
     height: 190px;
     text-align: center;
     margin: 0 auto;
     color: black;
     position: relative;
+    padding-bottom:30px;
 }
 
-    .main-title h1 {
-        font-size: 50px;
-        font-family: 'Poppins', sans-serif;
-        top: 70px;
-        position: relative;
-    }
+.main-title h1 {
+    font-size: 50px;
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
-    .main-title p {
-        font-size: 20px;
-        font-family: 'Poppins', sans-serif;
-        color: gray;
-        top: 65px;
-        position: relative;
-    }
+.main-title p {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: gray;
+    top: 90%;
+    position: relative;
+}
 
 /*
 
@@ -180,14 +180,14 @@ i {
 .view {
     color: white;
     font-size: 30px;
-    font-family: 'Arimo', sans-serif;
+    font-family: 'Poppins', sans-serif;
     cursor: pointer;
 }
 .caption {
     padding-top: 20px;
     padding-bottom: 30px;
     text-align: center;
-    font-family: 'Arimo', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 25px;
 }
 .center{
@@ -206,7 +206,7 @@ i {
 }
 #temptitle{
     position:relative;
-    top: -60px;
+    top: -63px;
     left: 25px;
 }
 /*
@@ -234,24 +234,23 @@ i {
     padding-left: 1360px;
 }
 
-    .pagination a {
-        color: black;
-        float: left;
-        padding: 8px 16px;
-        text-decoration: none;
-        transition: background-color .3s;
-        font-family: 'Arimo', sans-serif;
-        font-size: 20px;
-    }
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    font-size: 20px;
+}
 
-        .pagination a.active {
-            background-color: black;
-            color: white;
-        }
+.pagination a.active {
+    background-color: black;
+    color: white;
+}
 
-        .pagination a:hover:not(.active) {
-            background-color: #ddd;
-        }
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
 
 /*
 
@@ -264,7 +263,6 @@ i {
 }
 .footer p{
     padding-top: 40px;
-    font-family: 'Arimo', sans-serif;
     font-size: 12px;
     text-align: center;
 }

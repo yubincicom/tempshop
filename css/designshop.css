@@ -1,6 +1,6 @@
 ﻿/*
 
-    thumbnails
+    main designs thumbnails
 
 */
 
@@ -9,7 +9,7 @@
     width: 650px;
     margin: 0 auto;
     position: relative;
-    top: 55px;
+    top:90%;
 }
 
 .design-content {
@@ -20,7 +20,7 @@
     padding: 0px 80px 40px 80px;
     display: table;
 }
-
+/*Use to collapse the main design*/
 .block {
     position: relative;
     margin: 0 auto;
@@ -46,6 +46,12 @@
     font-size: 25px;
     font-family: 'Poppins', sans-serif;
 }
+
+/*
+
+    view full screen button
+
+*/
 .full-design {
     float: right;
     bottom: 40px;
@@ -60,37 +66,43 @@
 .full-design:hover{
     color: #66aa2d;
 }
+
+/*
+
+    design page 
+
+*/
 .big-design img {
     width: 80%;
     display: block;
     margin: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
+
 /*
-.arrow {
+
+    prev & next button on design page
+
+*/
+.prev{
     position: absolute;
-    padding: 1rem;
-    -webkit-box-shadow: 2px -2px #66aa2d;
-    border: solid transparent;
+    top: 40%;
     transition: 0.2s;
-    top:95px;
-}
-.arrow-left {
     left: 22%;
-    transform: rotate(225deg)
 }
-
-.arrow-right {
-    left: 75%;
-    transform: rotate(45deg)
-}
-
-.arrow-right:hover{
-    left: 76%;
-}
-.arrow-left:hover{
+.prev:hover{
     left: 21%;
-}*/
+}
+.next {
+    position: absolute;
+    transition: 0.2s;
+    top: 40%;
+    left: 75%;
+}
+.next:hover{
+    left:76%;
+}
+
 
  
 
