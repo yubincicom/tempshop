@@ -10,9 +10,9 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300|Arimo&display=swap" rel="stylesheet">
     <script src="javascript.js"></script>
 </head>
-<body>
+<body onload="getAllHeight()">
+    <!--top menu-->
     <div class="row header">
-        <!--top menu-->
         <div class="navbar">
             <div class="logo"><a href="Index.html"><img src="image/logo.png" /></a></div>
             <div class="dropdown">
@@ -66,39 +66,49 @@
     </div>
 
     <!--title-->
-    <div class="main-title">
+    <div class="design-title">
         <h1>CICOM Shop Main Designs</h1>
         <div class="title-border"></div>
         <p>Pick the website template you love</p>
     </div>
 
+    <!--content-->
     <div class="design-content">
         <div class="design">
             <div class="design-name">
                 Design 1
             </div>
             <a href="design1.html" class="full-design">View Full Screen &#8594;</a>
-            <div class="block" id="collapsible1" style="height: 300px; background-image:url(image/fullthumb1.png)" onclick="collapse1()">
+            <div class="block" id="collapsible1" style="background-image:url(image/fullthumb1.png)" onclick="collapse1()">
             </div>
         </div>
         <div class="design">
             <div class="design-name">
                 Design 2
             </div>
-            <a href="design2.html"  class="full-design">View Full Screen &#8594;</a>
-            <div class="block" id="collapsible2" style="height: 300px; background-image:url(image/fullthumb2.png)" onclick="collapse2()">
+            <a href="design2.html" class="full-design" >View Full Screen &#8594;</a>
+            <div class="block" id="collapsible2" style=" background-image:url(image/fullthumb2.png)" onclick="collapse2()">
             </div>
         </div>
         <div class="design">
             <div class="design-name">
                 Design 3
             </div>
-            <a href="design3.html"  class="full-design">View Full Screen &#8594;</a>
-            <div class="block" id="collapsible3" style="height: 300px; background-image:url(image/fullthumb3.png)" onclick="collapse3()">
+            <a href="design3.html" class="full-design">View Full Screen &#8594;</a>
+            <div class="block" id="collapsible3" style=" background-image:url(image/fullthumb3.png)" onclick="collapse3()">
+            </div>
+        </div>
+        <div class="design">
+            <div class="design-name">
+                Product List
+            </div>
+            <a href="productlist.html" class="full-design">View Full Screen &#8594;</a>
+            <div class="block" id="collapsible4" style=" background-image:url(image/mainthumb4.png)" onclick="collapse4()">
             </div>
         </div>
     </div>
 
+    <!--footer-->
     <div class="footer">
         <p>© 2020 CICOM TEMP SHOP All rights reserved. Designed by CICOM</p>
         <br />
