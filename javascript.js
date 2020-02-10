@@ -60,13 +60,14 @@ function collapse1() {
     image.src = imagesrc;
     var height = image.height;
 
-    if (document.getElementById("collapsible1").style.height == "300px") {
+    if (document.getElementById("collapsible1").style.height == "310px") {
         document.getElementById("collapsible1").style.height = height+"px";
     }
     else {
-        document.getElementById("collapsible1").style.height = "300px"
+        document.getElementById("collapsible1").style.height = "310px"
     }
 }
+
 function collapse2() {
     var imagesrc = document
         .getElementById('collapsible2')
@@ -78,13 +79,14 @@ function collapse2() {
     image.src = imagesrc;
     var height = image.height;
 
-    if (document.getElementById("collapsible2").style.height == "300px") {
+    if (document.getElementById("collapsible2").style.height == "310px") {
         document.getElementById("collapsible2").style.height = height+"px";
     }
     else {
-        document.getElementById("collapsible2").style.height = "300px"
+        document.getElementById("collapsible2").style.height = "310px"
     }
 }
+
 function collapse3() {
     var imagesrc = document
         .getElementById('collapsible3')
@@ -96,13 +98,14 @@ function collapse3() {
     image.src = imagesrc;
     var height = image.height;
 
-    if (document.getElementById("collapsible3").style.height == "300px") {
+    if (document.getElementById("collapsible3").style.height == "310px") {
         document.getElementById("collapsible3").style.height = height+"px";
     }
     else {
-        document.getElementById("collapsible3").style.height = "300px"
+        document.getElementById("collapsible3").style.height = "310px"
     }
 }
+
 function collapse4() {
     var imagesrc = document
         .getElementById('collapsible4')
@@ -114,10 +117,10 @@ function collapse4() {
     image.src = imagesrc;
     var height = image.height;
 
-    if (document.getElementById("collapsible4").style.height == "300px") {
+    if (document.getElementById("collapsible4").style.height == "310px") {
         document.getElementById("collapsible4").style.height = height + "px";
     }
     else {
-        document.getElementById("collapsible4").style.height = "300px"
+        document.getElementById("collapsible4").style.height = "310px"
     }
 }
