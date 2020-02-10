@@ -4,27 +4,54 @@
 
 */
 
-.title-border{
+
+.design-content {
+    padding: 110px 65px 10px 65px;
+    display: table;
+}
+
+/*
+
+    title
+
+*/
+.design-title {
+    height: 150px;
+    text-align: center;
+    margin: 0 auto;
+    color: black;
+    position: relative;
+    padding-bottom:30px;
+}
+
+.design-title h1 {
+    font-size: 40px;
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title-border {
     border: 1px solid #66aa2d;
     width: 650px;
     margin: 0 auto;
     position: relative;
-    top:90%;
+    top: 96%;
 }
 
-.design-content {
-    padding: 120px 80px 40px 80px;
-    display: table;
+.design-title p {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: gray;
+    top: 90%;
+    position: relative;
 }
-.design-page{
-    padding: 0px 80px 40px 80px;
-    display: table;
-}
-/*Use to collapse the main design*/
+
+/*To collapse the main design*/
 .block {
     position: relative;
-    margin: 0 auto;
-    width: 500px;
+    width: 530px;
     transition: 0.5s;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     cursor: pointer;
@@ -34,7 +61,8 @@
 }
 .design{
     float:left;
-    padding: 40px;
+    padding: 30px;
+    padding-bottom: 60px;
 }
 .design a:hover{
     color: #66aa2d;
@@ -86,21 +114,21 @@
 */
 .prev{
     position: absolute;
-    top: 40%;
+    top: 35%;
     transition: 0.2s;
-    left: 22%;
+    left: 25%;
 }
 .prev:hover{
-    left: 21%;
+    left: 24%;
 }
 .next {
     position: absolute;
     transition: 0.2s;
-    top: 40%;
-    left: 75%;
+    top: 35%;
+    left: 72%;
 }
 .next:hover{
-    left:76%;
+    left:73%;
 }
 
 
