@@ -6,7 +6,7 @@
 
 
 .design-content {
-    padding: 110px 65px 10px 65px;
+    padding: 0px 65px 10px 65px;
     display: table;
 }
 
@@ -16,28 +16,27 @@
 
 */
 .design-title {
-    height: 150px;
-    text-align: center;
+    padding-top:90px;
     margin: 0 auto;
     color: black;
     position: relative;
-    padding-bottom:30px;
+
 }
 
 .design-title h1 {
-    font-size: 40px;
+    font-size: 30px;
     position: absolute;
-    top: 38%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 .title-border {
     border: 1px solid #66aa2d;
-    width: 650px;
+    width: 400px;
     margin: 0 auto;
+    bottom: 8px;
     position: relative;
-    top: 96%;
 }
 
 .design-title p {
@@ -48,10 +47,24 @@
     position: relative;
 }
 
-/*To collapse the main design*/
+
+.bigdesign-title {
+    height: 80px;
+    padding-left:30px;
+}
+.bigdesign-title h1{
+    font-size: 26px;
+    top: 35%;
+    
+}
+
+/*
+
+    To collapse the main design
+
+*/
 .block {
     position: relative;
-    width: 530px;
     transition: 0.5s;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     cursor: pointer;
@@ -61,18 +74,17 @@
 }
 .design{
     float:left;
-    padding: 30px;
+    padding: 10px 20px 20px 20px;
     padding-bottom: 60px;
 }
 .design a:hover{
     color: #66aa2d;
 }
 .design-name {
-    float: left;
-    bottom: 50px;
-    position: relative;
     font-size: 25px;
+    padding-bottom: 10px;
     font-family: 'Poppins', sans-serif;
+    font-size: 20px;
 }
 
 /*
@@ -101,7 +113,7 @@
 
 */
 .big-design img {
-    width: 80%;
+    width: 100%;
     display: block;
     margin: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -114,21 +126,28 @@
 */
 .prev{
     position: absolute;
-    top: 35%;
+    top: 9%;
     transition: 0.2s;
-    left: 25%;
+    left: 90%;
 }
 .prev:hover{
-    left: 24%;
+    left: 89.5%;
 }
 .next {
     position: absolute;
     transition: 0.2s;
-    top: 35%;
-    left: 72%;
+    top: 9%;
+    left: 95%;
 }
 .next:hover{
-    left:73%;
+    left:95.5%;
+}
+
+
+.page-border{
+    position: absolute;
+    top: 9%;
+    left: 94%;
 }
 
 
